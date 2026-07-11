@@ -128,7 +128,7 @@ header h1 {
 header p {
   font-size: 1.15rem;
   color: var(--text-muted);
-  max-width: 600px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
