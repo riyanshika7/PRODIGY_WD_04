@@ -148,3 +148,22 @@ function doPost(e) {
 
   return ContentService.createTextOutput("Success");
 }
+
+// === 9. Contact Section: Copy Email Feature ===
+const copyCard = document.getElementById('copy-email-card');
+const copyBtn = document.getElementById('copy-email-btn');
+if (copyCard && copyBtn) {
+  copyCard.addEventListener('click', () => {
+    const email = 'riyanshika0207@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      copyBtn.textContent = '✅';
+      copyBtn.style.color = '#10b981';
+      setTimeout(() => {
+        copyBtn.textContent = '📋';
+        copyBtn.style.color = '';
+      }, 2000);
+    }).catch(err => {
+      console.error('Could not copy email: ', err);
+    });
+  });
+}

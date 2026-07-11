@@ -367,39 +367,74 @@
     <!-- CONTACT -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/xqeopkza" method="POST">
-        <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input id="fullname" name="fullname" type="text" required placeholder="Your Name">
+      <div class="contact-container">
+        <!-- Contact Info Side -->
+        <div class="contact-info">
+          <h3>Let's collaborate!</h3>
+          <p>I am actively seeking web development internships and coding opportunities. Drop a message here, email me directly, or connect through my social links!</p>
+          
+          <div class="contact-methods">
+            <div class="method-card" id="copy-email-card" title="Click to copy email">
+              <span class="method-icon">✉️</span>
+              <div class="method-details">
+                <span class="method-label">Email Me</span>
+                <span class="method-value" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                  riyanshika0207@gmail.com
+                  <button class="copy-btn" id="copy-email-btn" aria-label="Copy Email" style="padding: 0; display: inline-flex; vertical-align: middle;">📋</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="method-card">
+              <span class="method-icon">📞</span>
+              <div class="method-details">
+                <span class="method-label">Call / Text</span>
+                <span class="method-value">+91 7009035031</span>
+              </div>
+            </div>
+
+            <div class="method-card">
+              <span class="method-icon">📍</span>
+              <div class="method-details">
+                <span class="method-label">Location</span>
+                <span class="method-value">Jalandhar, Punjab, India</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" required placeholder="your.email@example.com">
-        </div>
+        <!-- Glassmorphic Form Card -->
+        <div class="contact-form-card">
+          <form action="https://formspree.io/f/xqeopkza" method="POST">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input id="fullname" name="fullname" type="text" required placeholder="Your Name">
+            </div>
 
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input id="phone" name="phone" type="tel" placeholder="+91 12345 67890">
-        </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required placeholder="your.email@example.com">
+            </div>
 
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject" required>
-            <option value="">-- Choose Option --</option>
-            <option value="Project collaboration">Project Collaboration</option>
-            <option value="Internship">Internship Opportunity</option>
-            <option value="General query">General Query</option>
-          </select>
-        </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">-- Choose Subject --</option>
+                <option value="Project collaboration">Project Collaboration</option>
+                <option value="Internship">Internship Opportunity</option>
+                <option value="General query">General Query</option>
+              </select>
+            </div>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
-        </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+            </div>
 
-        <button type="submit">Send Message</button>
-      </form>
+            <button type="submit">Send Message 🚀</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- ACHIEVEMENTS & OTHER DETAILS -->
